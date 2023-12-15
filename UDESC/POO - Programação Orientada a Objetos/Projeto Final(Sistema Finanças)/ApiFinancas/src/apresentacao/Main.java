@@ -1,33 +1,58 @@
 package apresentacao;
-
+import apresentacao.telas.Cadastro;
 import apresentacao.telas.Dashboard;
-import dados.Categoria;
-import dados.Conta;
-import dados.Registro;
-import dados.Tempo;
-import dados.Usuario;
-import dados.Registro.TipoRegistro;
+import apresentacao.telas.Login;
 import negocio.Sistema;
 
 public class Main {
     public static void main(String[] args) {
 
-        Sistema sistema = new Sistema();
-        Usuario usuario = new Usuario("herton", "123123");
-        sistema.realizaCadastro(usuario);
-        Conta conta = new Conta("Minha Carteira", 200.00);
-        sistema.criaConta(conta, usuario);
-        Categoria categoria = new Categoria("Alimentação");
-        Tempo tempo  = new Tempo();
-        tempo.setAno(12);
-        tempo.setDia(02);
-        tempo.setMes(06);
-        Registro registro = new Registro(conta, 122.00, TipoRegistro.RECEITA, categoria, tempo, "Gayy");
+        Sistema sistema = Sistema.getInstance();
+        // Login login = new Login();
+        // Cadastro cadastro = new Cadastro();
 
-        sistema.realizaRegistro(registro, usuario, conta);
+        sistema.realizaLogin("herton", "123123");
+        new Dashboard(sistema);
 
-        System.out.println(conta.getSaldo());
-        new Dashboard(usuario);
+        // login.getBotao().addActionListener(entrar -> {               
+        //     String nome = login.getCampoNome().getText();
+        //     String senha = String.valueOf(login.getCampoSenha().getPassword());
+
+        //     if(!login.vazio() && sistema.realizaLogin(nome, senha)){
+        //         login.fecharLogin();
+        //         new Dashboard(sistema);
+        //     }
+        //     else{
+        //         login.invalido();
+        //     }  
+
+        // });
+            
+        // login.getBotaoCadastro().addActionListener(irCadastro -> {
+        //     login.fechaLogin();
+        //     cadastro.abrir();
+
+        // });
+        // cadastro.getBotao().addActionListener(cadastrar ->{
+
+        //     String nomeCad = cadastro.getCampoNome().getText();
+        //     String senhaCad = String.valueOf(cadastro.getCampoSenha().getPassword());
+
+        //     if(!cadastro.vazio() && sistema.realizaCadastro(nomeCad, senhaCad)){
+        //         cadastro.cadastrado();
+        //         cadastro.fechar();
+        //         login.abreLogin();
+        //     }
+        //     else{
+        //         cadastro.invalido();
+        //     }       
+        // });
+
+        // cadastro.getBotaoVoltar().addActionListener(voltar ->{
+        //     cadastro.fechar();
+        //     login.abreLogin();
+        // });
+
     }
 
 }

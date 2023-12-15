@@ -1,69 +1,89 @@
 package apresentacao.telas;
-
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.Label;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.Color;
+import java.awt.Font;
 import java.util.concurrent.TimeUnit;
 
 import javax.swing.*;
 
-public class Login extends JFrame implements ActionListener{
+import resources.jcustons.JButtonCustom;
+import resources.jcustons.JPanelCustom;
 
-    private Panel painel;
-    private JTextField pegaNome;
-    private JTextField pegaSenha;
-    JButton entrar;
+public class Login extends JFrame{
+
+    private JPanelCustom painel;
+    private JTextField campoNome;
+    private JPasswordField campoSenha;
+    JLabel aviso;
+    JButtonCustom entrar;
+    JButtonCustom cadastro;
 
     int WIDTH = 820;
     int HEIGHT = (int)(0.61*WIDTH);
 
-
     public Login(){
         // Criando janela
+        
         setSize(WIDTH,HEIGHT);
-        setTitle("API Finanças");
-        setDefaultCloseOperation(EXIT_ON_CLOSE); // fechar janela 
+        setTitle("API Finanças/Login");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
-        
         configTextF();
         configButton();
+        configButtonCadastro();
         configPanel();
-        
+        repaint();
+        painel.repaint();
+
         add(painel);
         setVisible(true);
 
-
     }
+    public void fechaLogin(){
+        dispose();
+    }
+    public void abreLogin(){
+        setVisible(true);
+    }
+    // tela
     public void configPanel(){
         
-        String caminho = "./src/resources/Login.jpg";
+        String caminho = "./src/resources/images/login/Login(Claro).jpg";
 
-        painel = new Panel(caminho);
+        painel = new JPanelCustom(caminho);
         painel.setPreferredSize(getSize());
         painel.setLayout(null);
-        painel.add(pegaNome);
-        painel.add(pegaSenha);
+        painel.add(campoNome);
+        painel.add(campoSenha);
         painel.add(entrar);
+        painel.add(cadastro);
+
+        int x = (int)(WIDTH*0.05);
+
+        aviso = new JLabel("Senha e/ou Nome inválidos"); 
+        aviso.setBounds(x, 0, 300, 300);
+        aviso.setFont(new Font("Arial", 10, 15));
+        aviso.setForeground(Color.WHITE);
+        painel.add(aviso);
+    
     }
     public void configTextF(){
         
-        pegaNome = new JTextField();
-        pegaSenha = new JTextField();
+        campoNome = new JTextField("");
+        campoSenha = new JPasswordField("");
 
         int x = (int)(WIDTH*0.05);
         int y = (int)(HEIGHT*0.4);
         
         int y1 = (int)(HEIGHT*0.56);
 
-        pegaNome.setBounds(x, y, 300, 20);
-        pegaNome.setOpaque(false);
-        pegaNome.setBorder(null);
-        pegaSenha.setBounds(x, y1, 300, 20);
-        pegaSenha.setOpaque(false);
-        pegaSenha.setBorder(null);
+        campoNome.setBounds(x, y, 300, 20);
+        campoNome.setOpaque(false);
+        campoNome.setBorder(null);
+        campoSenha.setBounds(x, y1, 300, 20);
+        campoSenha.setOpaque(false);
+        campoSenha.setBorder(null);
+
 
     }
     public void configButton(){
@@ -71,28 +91,34 @@ public class Login extends JFrame implements ActionListener{
         int x = (int)(WIDTH*0.05);
         int y = (int)(HEIGHT*0.72);
 
-        entrar = new JButton();
+        entrar = new JButtonCustom();
         entrar.setBounds(x, y, 310, 30);
         entrar.setContentAreaFilled(false);
         entrar.setBorderPainted(false);
 
-        entrar.addActionListener(this);
     }
-    public void animacao(){
+    public void configButtonCadastro(){
+
+        int x = (int)(WIDTH*0.05);
+        int y = (int)(HEIGHT*0.72);
+
+        cadastro = new JButtonCustom();
+        cadastro.setBounds(x, y + 50, 310, 30);
+        cadastro.setContentAreaFilled(false);
+        cadastro.setBorderPainted(false);
         
-        int pausa = 200;
-
-        painel.setCaminho("./src/resources/animacaologin1.jpg");
-        pausaMili(pausa);
-        painel.setCaminho("./src/resources/animacaologin2.jpg");
-        pausaMili(pausa);
-        painel.setCaminho("./src/resources/animacaologin3.jpg");
-        pausaMili(pausa);
-        painel.setCaminho("./src/resources/animacaologin4.jpg");
-        pausaMili(pausa);
-        painel.setCaminho("./src/resources/animacaologin5.jpg");
-
-    
+    }
+    public void invalido(){
+        javax.swing.SwingUtilities.invokeLater(new Runnable() { 
+            public void run() { 
+                aviso.setForeground(Color.RED);
+                campoSenha.setText("");
+                campoNome.setText("");
+                campoNome.repaint();
+                campoSenha.repaint();
+                
+            } 
+        });
     }
     public void pausaMili(int pausa){
         try {
@@ -103,8 +129,37 @@ public class Login extends JFrame implements ActionListener{
         }
         
     }
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        animacao();
+    public void fecharLogin(){
+        dispose();
     }
+
+    public JTextField getCampoNome(){
+        
+        return campoNome;
+    }
+    public JPasswordField getCampoSenha(){
+        
+        return campoSenha;
+    }
+    public boolean vazio(){
+        if(estaVazio(campoNome) || estaVazio(campoSenha)){
+            return false;   
+        }
+        return true;
+    }
+
+    public JButtonCustom getBotao(){
+        return entrar;
+    }
+    public JButtonCustom getBotaoCadastro(){
+        return cadastro;
+    }
+    public JTextField getPegaNome() {
+        return campoNome;
+    }
+    public boolean estaVazio(JTextField campo) {
+        return campo.getText() != null && !campo.getText().trim().isEmpty();
+    }
+
+
 }
