@@ -741,7 +741,7 @@ public class Dashboard extends JFrame {
         // ... then compositing the image on top,
         // using the white shape from above as alpha source
         g2.setComposite(AlphaComposite.SrcAtop);
-        g2.drawImage(image, 0, 0, null);
+        g2.drawImage(image, 1, 1, null);
         
         g2.dispose();
         

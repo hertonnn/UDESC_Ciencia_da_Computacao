@@ -379,7 +379,4 @@ public class Historico extends JPanel{
     public JButtonCustom getOlho() {
         return olho;
     }
-    public String getAzulClaro() {
-        return azulClaro;
-    }
 }
