@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: libs/postgresql-42.6.0.jar
+Main-Class: apresentacao.Teste
