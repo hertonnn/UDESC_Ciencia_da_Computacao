@@ -20,7 +20,15 @@ int main(){
     // FREE() - recebe o endereço da memória a ser liberada e o faz
 
     free(v);
-    printf("%d", v[0]);// retorna um endereço lixo
+    //printf("%d", v[0]);// retorna um endereço lixo
 
     //Só  podemos  passar  para  a  função  free  um  endereço  de  memória  que  tenha  sido  alocado  dinamicamente.  Devemos  lembrar  ainda  que  não  podemos  acessar  o  espaço  na  memória  depois que o liberamos.
+
+    // REALLOC() - a função que vai aumentar ou diminuir o espaço de um vetor
+
+    int *vetor;
+
+    vetor = (int*) malloc(6 * sizeof(int)); 
+
+    vetor = (int*) realloc(vetor, 2 * sizeof(int));
 }
