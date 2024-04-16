@@ -51,6 +51,27 @@ double g(double x){
     return cos(x);
 }
 
+// Exercicios 3.3.10
+// (Fluidos) Na hidráulica, o fator de atrito de Darcy é dado pela implicitamente pela equação de Colebrook-White:
+double Col_White(){
+    //RESP. 0.0431266
+    // Todas as unidades de medidas estarão em metros
+    double f = 0.01; // fator de atrito (chute despretensioso),  pois esse é o cara que eu quero
+    double e = 0.002; // rugosidade do tubo em metros
+    double Rh = 0.05; // raio hidraulico
+    double Re = 10000; // numero de Reynolds
+    
+    int iteracoes = 10; 
+
+    int n = 0;
+    for(n; n < iteracoes; n++){
+        f = -2*log10(e/(14.8*Rh) + (2.51*f)/Re);
+        printf("\n%i | %f", n,f);
+    }
+    printf("\n\nValor aproximado para o fator de atrito é: %f", f);
+
+}
+
 int main(){
     // 
     double TOL = 0.0001;
@@ -76,15 +97,18 @@ int main(){
     double x = 0.7; // chute inicial da raiz
     double xe = 0.7390851605; // raiz aproximada
     double en = 1; // erro(1 é só pra declarar um valor e n dar erro)
-    double TOL = 0.001; // tolerância para o erro 
+    double TOL1 = 0.001; // tolerância para o erro 
 
-    
+
     printf("\n\n n(i) |    x1(i)   | En := |x(n) - x*|");
 
-    for(i = 1; en > TOL; i++){
+    for(i = 1; en > TOL1; i++){
         en = fabs(x - xe); // para o mostrar o decaimento do erro
         printf("\n%i    |   %3.5f     | %3.5f", i, x, en);
         x = g(x);
     }
+
+    //Teste do Exercicio 3.3.10
+    Col_White();
 
 }
