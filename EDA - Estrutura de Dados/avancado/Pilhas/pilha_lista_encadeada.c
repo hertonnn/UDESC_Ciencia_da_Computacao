@@ -1,6 +1,9 @@
 //Pilha implementada em uma lista encadeada
 //Decisões de projeto: 1. Nossa lista terá uma célula-cabeça (e portanto a primeira célula da lista não fará parte da pilha). 2. O topo da pilha ficará na segunda célula e não na última (por quê?). 3. Uma variável global pi apontará a cabeça da lista.
 
+
+// Nessa implementação tem alguns erros que eu corrijo mais em outros códigos nessa pasta
+// como o uso de variáveis globais e verificação de nulidade da pilha
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -123,6 +123,7 @@ int main(){
             printf("\nO resultado dê: %s é igual à %0.3f\n", s, resolvePostfix(s));
             break;
         case 2:
+            exit(1);
             break;
         default:
             exit(1);
