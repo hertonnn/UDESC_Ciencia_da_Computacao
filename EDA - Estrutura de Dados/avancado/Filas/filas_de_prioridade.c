@@ -17,14 +17,14 @@ struct cell{
 
 typedef struct cell Cell;
 
-// Colocando elemento considerando sua prioridade. Complexidade O(n)
+// Colocando elemento considerando sua prioridade.
 // Ordenada – Antes de um elementos ser inserido a fila, a posição correta (de acordo
 // com a sua prioridade) deve ser identificada. 
 // # A complexidade dessa algoritmo é no pior caso O(n), onde n é o número de elementos da pilha.
 Cell *push(Cell *head, Cell *element){
     if(head->priority <= element->priority){
             element->next = head;
-            head->prev = element;
+            head->prev = element;   
             return element;
         }
     Cell *node = head;
