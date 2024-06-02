@@ -35,7 +35,17 @@ int main(){
     printf("%s\n", search(hash, "Silveira")->value);
     printf("%s\n", search(hash, "Akita")->value);
     printf("%s\n", search(hash, "skcnzj")->value);
-    printf("%s\n", search(hash, "vwm")->value);
+    printf("%s\n", hash->list[hashCode("Silveira")]->key);
+
+    // int i = 0;
+    // while (i<HASH_SIZE-1)
+    // {
+    //     if(hash->list[i]){
+    //         printf("%s", hash->list[i]->value);
+    //         i++;
+    //     }
+    // }
+    
 
     free(hash);
 }

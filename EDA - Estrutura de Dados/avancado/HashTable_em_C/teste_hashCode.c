@@ -16,7 +16,7 @@ int main(){
     srand(time(NULL));   // Initialization, should only be called once.
 
     char *validchars = "abcdefghijklmnopqrstuvwxyz";
-    char *s1 = "Akita"; // String comparada
+    char *s1 = "Silveira"; // String comparada
     char *s2 = ( char * ) malloc ( (strlen(s1) + 1) * sizeof(char));
 
     int num = 0;
