@@ -6,5 +6,6 @@ bem como trabalhos, projetos, materiais usados e arquivos diversos.
 - ANN: Análise Numérica
 - EDA: Estrutura de Dados
 - MDI: Matemática Discreta
+- SID: Sistemas Digitais
 # 2022
 - PFN: Programação Funcional
