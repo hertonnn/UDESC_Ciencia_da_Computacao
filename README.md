@@ -4,3 +4,5 @@ Conteúdo da grade curricular do curso de Bacharelado em Ciência da Computaçã
 - ANN: Análise Numérica
 - EDA: Estrutura de Dados
 - MDI: Matemática Discreta
+# 2022
+- PFN: Programação Funcional
