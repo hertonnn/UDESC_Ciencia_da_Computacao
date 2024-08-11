@@ -7,6 +7,7 @@ bem como trabalhos, projetos, materiais usados e arquivos diversos.
 - EDA2: Estruturas de Dados 2
 - AOC: Arquitetura e Organização de Computadores
 - EMI: Empreendedorismo em Informática
+- TEG: Teoria dos Grafos
 # 2024 1/2
 - POO: Programação Orientada a Objetos
 - ANN: Análise Numérica
