@@ -2,6 +2,7 @@ Conteúdo da grade curricular do curso de Bacharelado em Ciência da Computaçã
 Universidade do Estado de Santa Catarina - UDESC, contendo as principais disciplinas, 
 bem como trabalhos, projetos, materiais usados e arquivos diversos.
 
+
 # 2024 2/2
 - LFA: Linguagens Formais e Autômatos
 - EDA2: Estruturas de Dados 2
