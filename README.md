@@ -26,7 +26,7 @@ bem como trabalhos, projetos, materiais usados e arquivos diversos meus.
 - PFN: Programação Funcional
 ## Sobre a UDESC CCT
 
-![img_UDESC](https://github.com/hertonnn/UDESC_Ciencia_da_Computacao/tree/master/utils/img/img_udesc.jpg)
+![img_udesc](https://github.com/hertonnn/UDESC_Ciencia_da_Computacao/tree/master/utils/img/img_udesc.png)
 
 Com 53 anos de fundação, a Udesc Joinville é considerada uma das melhores universidades públicas do país. A instituição oferece nove cursos de graduação e 11 cursos de pós-graduação, inteiramente gratuitos. A equipe é composta por cerca de 250 professores, em grande parte doutores, além de 96 servidores técnicos.
 
