@@ -19,7 +19,7 @@ bem como trabalhos, projetos, materiais usados e arquivos diversos meus.
 # 2024 1º semestre
 - POO: Programação Orientada a Objetos
 - ANN: Análise Numérica
-- EDA: Estrutura de Dados
+- EDA: Estrutura de Dados 📌
 - MDI: Matemática Discreta
 - SID: Sistemas Digitais
 # 2022 1º semestre
