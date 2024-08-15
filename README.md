@@ -10,19 +10,19 @@ bem como trabalhos, projetos, materiais usados e arquivos diversos meus.
 | :---------- | :--------- | :---------------------------------- |
 | `Max` | `📌` | Acesse essas disciplinas primeiro. Pois, possuem material documentado, links, contextualização e mais. |
 
-# 2024 2º semestre
+# 2024/2
 - LFA: Linguagens Formais e Autômatos 📌
 - EDA2: Estrutura de Dados 2 
 - AOC: Arquitetura e Organização de Computadores
 - EMI: Empreendedorismo em Informática
 - TEG: Teoria dos Grafos 📌
-# 2024 1º semestre
+# 2024/1
 - POO: Programação Orientada a Objetos
 - ANN: Análise Numérica
 - EDA: Estrutura de Dados 📌
 - MDI: Matemática Discreta
 - SID: Sistemas Digitais
-# 2022 1º semestre
+# 2022/1
 - PFN: Programação Funcional
 
 
