@@ -19,7 +19,7 @@ bem como trabalhos, projetos, materiais usados e arquivos diversos meus.
 # 2024/1
 - POO: Programação Orientada a Objetos
 - ANN: Análise Numérica
-[🔗](https://github.com/hertonnn/UDESC_Ciencia_da_Computacao/tree/master/EDA%20-%20Estrutura%20de%20Dados#estrutura-de-dados)- EDA: Estrutura de Dados 📌
+- EDA: Estrutura de Dados 📌
 - MDI: Matemática Discreta
 - SID: Sistemas Digitais
 # 2022/1
