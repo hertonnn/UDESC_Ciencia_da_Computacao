@@ -1,0 +1,610 @@
+---- Vetor de tamanho 1000 ----
+   Vetor aleatório 0
+     Pesquisa sequencial - caso medio: 1388
+     Pesquisa sequencial sentinela - caso medio: 695
+     Pesquisa binaria - caso medio: 20
+     Pesquisa por interpolacao - caso medio: 18
+
+   Vetor aleatório 1
+     Pesquisa sequencial - caso medio: 1644
+     Pesquisa sequencial sentinela - caso medio: 824
+     Pesquisa binaria - caso medio: 43
+     Pesquisa por interpolacao - caso medio: 48
+
+   Vetor aleatório 2
+     Pesquisa sequencial - caso medio: 2038
+     Pesquisa sequencial sentinela - caso medio: 1022
+     Pesquisa binaria - caso medio: 72
+     Pesquisa por interpolacao - caso medio: 66
+
+   Vetor aleatório 3
+     Pesquisa sequencial - caso medio: 2352
+     Pesquisa sequencial sentinela - caso medio: 1180
+     Pesquisa binaria - caso medio: 98
+     Pesquisa por interpolacao - caso medio: 96
+
+   Vetor aleatório 4
+     Pesquisa sequencial - caso medio: 3606
+     Pesquisa sequencial sentinela - caso medio: 1808
+     Pesquisa binaria - caso medio: 121
+     Pesquisa por interpolacao - caso medio: 108
+
+   Vetor aleatório 5
+     Pesquisa sequencial - caso medio: 5538
+     Pesquisa sequencial sentinela - caso medio: 2775
+     Pesquisa binaria - caso medio: 147
+     Pesquisa por interpolacao - caso medio: 120
+
+   Vetor aleatório 6
+     Pesquisa sequencial - caso medio: 6030
+     Pesquisa sequencial sentinela - caso medio: 3022
+     Pesquisa binaria - caso medio: 170
+     Pesquisa por interpolacao - caso medio: 132
+
+   Vetor aleatório 7
+     Pesquisa sequencial - caso medio: 6394
+     Pesquisa sequencial sentinela - caso medio: 3205
+     Pesquisa binaria - caso medio: 193
+     Pesquisa por interpolacao - caso medio: 150
+
+   Vetor aleatório 8
+     Pesquisa sequencial - caso medio: 6902
+     Pesquisa sequencial sentinela - caso medio: 3460
+     Pesquisa binaria - caso medio: 219
+     Pesquisa por interpolacao - caso medio: 156
+
+   Vetor aleatório 9
+     Pesquisa sequencial - caso medio: 8704
+     Pesquisa sequencial sentinela - caso medio: 4362
+     Pesquisa binaria - caso medio: 242
+     Pesquisa por interpolacao - caso medio: 168
+
+---- Vetor de tamanho 2000 ----
+   Vetor aleatório 0
+     Pesquisa sequencial - caso medio: 2730
+     Pesquisa sequencial sentinela - caso medio: 1366
+     Pesquisa binaria - caso medio: 29
+     Pesquisa por interpolacao - caso medio: 18
+
+   Vetor aleatório 1
+     Pesquisa sequencial - caso medio: 5728
+     Pesquisa sequencial sentinela - caso medio: 2866
+     Pesquisa binaria - caso medio: 34
+     Pesquisa por interpolacao - caso medio: 48
+
+   Vetor aleatório 2
+     Pesquisa sequencial - caso medio: 6896
+     Pesquisa sequencial sentinela - caso medio: 3451
+     Pesquisa binaria - caso medio: 57
+     Pesquisa por interpolacao - caso medio: 66
+
+   Vetor aleatório 3
+     Pesquisa sequencial - caso medio: 9058
+     Pesquisa sequencial sentinela - caso medio: 4533
+     Pesquisa binaria - caso medio: 83
+     Pesquisa por interpolacao - caso medio: 78
+
+   Vetor aleatório 4
+     Pesquisa sequencial - caso medio: 12198
+     Pesquisa sequencial sentinela - caso medio: 6104
+     Pesquisa binaria - caso medio: 115
+     Pesquisa por interpolacao - caso medio: 102
+
+   Vetor aleatório 5
+     Pesquisa sequencial - caso medio: 12762
+     Pesquisa sequencial sentinela - caso medio: 6387
+     Pesquisa binaria - caso medio: 144
+     Pesquisa por interpolacao - caso medio: 120
+
+   Vetor aleatório 6
+     Pesquisa sequencial - caso medio: 16652
+     Pesquisa sequencial sentinela - caso medio: 8333
+     Pesquisa binaria - caso medio: 167
+     Pesquisa por interpolacao - caso medio: 138
+
+   Vetor aleatório 7
+     Pesquisa sequencial - caso medio: 18074
+     Pesquisa sequencial sentinela - caso medio: 9045
+     Pesquisa binaria - caso medio: 196
+     Pesquisa por interpolacao - caso medio: 168
+
+   Vetor aleatório 8
+     Pesquisa sequencial - caso medio: 20006
+     Pesquisa sequencial sentinela - caso medio: 10012
+     Pesquisa binaria - caso medio: 213
+     Pesquisa por interpolacao - caso medio: 186
+
+   Vetor aleatório 9
+     Pesquisa sequencial - caso medio: 23244
+     Pesquisa sequencial sentinela - caso medio: 11632
+     Pesquisa binaria - caso medio: 239
+     Pesquisa por interpolacao - caso medio: 204
+
+---- Vetor de tamanho 3000 ----
+   Vetor aleatório 0
+     Pesquisa sequencial - caso medio: 742
+     Pesquisa sequencial sentinela - caso medio: 372
+     Pesquisa binaria - caso medio: 35
+     Pesquisa por interpolacao - caso medio: 18
+
+   Vetor aleatório 1
+     Pesquisa sequencial - caso medio: 6074
+     Pesquisa sequencial sentinela - caso medio: 3039
+     Pesquisa binaria - caso medio: 61
+     Pesquisa por interpolacao - caso medio: 30
+
+   Vetor aleatório 2
+     Pesquisa sequencial - caso medio: 9196
+     Pesquisa sequencial sentinela - caso medio: 4601
+     Pesquisa binaria - caso medio: 93
+     Pesquisa por interpolacao - caso medio: 48
+
+   Vetor aleatório 3
+     Pesquisa sequencial - caso medio: 10050
+     Pesquisa sequencial sentinela - caso medio: 5029
+     Pesquisa binaria - caso medio: 125
+     Pesquisa por interpolacao - caso medio: 78
+
+   Vetor aleatório 4
+     Pesquisa sequencial - caso medio: 11402
+     Pesquisa sequencial sentinela - caso medio: 5706
+     Pesquisa binaria - caso medio: 154
+     Pesquisa por interpolacao - caso medio: 102
+
+   Vetor aleatório 5
+     Pesquisa sequencial - caso medio: 12220
+     Pesquisa sequencial sentinela - caso medio: 6116
+     Pesquisa binaria - caso medio: 177
+     Pesquisa por interpolacao - caso medio: 120
+
+   Vetor aleatório 6
+     Pesquisa sequencial - caso medio: 15468
+     Pesquisa sequencial sentinela - caso medio: 7741
+     Pesquisa binaria - caso medio: 206
+     Pesquisa por interpolacao - caso medio: 156
+
+   Vetor aleatório 7
+     Pesquisa sequencial - caso medio: 18862
+     Pesquisa sequencial sentinela - caso medio: 9439
+     Pesquisa binaria - caso medio: 241
+     Pesquisa por interpolacao - caso medio: 174
+
+   Vetor aleatório 8
+     Pesquisa sequencial - caso medio: 22892
+     Pesquisa sequencial sentinela - caso medio: 11455
+     Pesquisa binaria - caso medio: 258
+     Pesquisa por interpolacao - caso medio: 192
+
+   Vetor aleatório 9
+     Pesquisa sequencial - caso medio: 24720
+     Pesquisa sequencial sentinela - caso medio: 12370
+     Pesquisa binaria - caso medio: 290
+     Pesquisa por interpolacao - caso medio: 216
+
+---- Vetor de tamanho 4000 ----
+   Vetor aleatório 0
+     Pesquisa sequencial - caso medio: 5044
+     Pesquisa sequencial sentinela - caso medio: 2523
+     Pesquisa binaria - caso medio: 26
+     Pesquisa por interpolacao - caso medio: 6
+
+   Vetor aleatório 1
+     Pesquisa sequencial - caso medio: 8692
+     Pesquisa sequencial sentinela - caso medio: 4348
+     Pesquisa binaria - caso medio: 61
+     Pesquisa por interpolacao - caso medio: 30
+
+   Vetor aleatório 2
+     Pesquisa sequencial - caso medio: 15278
+     Pesquisa sequencial sentinela - caso medio: 7642
+     Pesquisa binaria - caso medio: 93
+     Pesquisa por interpolacao - caso medio: 48
+
+   Vetor aleatório 3
+     Pesquisa sequencial - caso medio: 22194
+     Pesquisa sequencial sentinela - caso medio: 11101
+     Pesquisa binaria - caso medio: 125
+     Pesquisa por interpolacao - caso medio: 66
+
+   Vetor aleatório 4
+     Pesquisa sequencial - caso medio: 24072
+     Pesquisa sequencial sentinela - caso medio: 12041
+     Pesquisa binaria - caso medio: 154
+     Pesquisa por interpolacao - caso medio: 78
+
+   Vetor aleatório 5
+     Pesquisa sequencial - caso medio: 25636
+     Pesquisa sequencial sentinela - caso medio: 12824
+     Pesquisa binaria - caso medio: 186
+     Pesquisa por interpolacao - caso medio: 96
+
+   Vetor aleatório 6
+     Pesquisa sequencial - caso medio: 31398
+     Pesquisa sequencial sentinela - caso medio: 15706
+     Pesquisa binaria - caso medio: 221
+     Pesquisa por interpolacao - caso medio: 120
+
+   Vetor aleatório 7
+     Pesquisa sequencial - caso medio: 37170
+     Pesquisa sequencial sentinela - caso medio: 18593
+     Pesquisa binaria - caso medio: 250
+     Pesquisa por interpolacao - caso medio: 144
+
+   Vetor aleatório 8
+     Pesquisa sequencial - caso medio: 38858
+     Pesquisa sequencial sentinela - caso medio: 19438
+     Pesquisa binaria - caso medio: 282
+     Pesquisa por interpolacao - caso medio: 174
+
+   Vetor aleatório 9
+     Pesquisa sequencial - caso medio: 39688
+     Pesquisa sequencial sentinela - caso medio: 19854
+     Pesquisa binaria - caso medio: 311
+     Pesquisa por interpolacao - caso medio: 192
+
+---- Vetor de tamanho 5000 ----
+   Vetor aleatório 0
+     Pesquisa sequencial - caso medio: 1126
+     Pesquisa sequencial sentinela - caso medio: 564
+     Pesquisa binaria - caso medio: 35
+     Pesquisa por interpolacao - caso medio: 24
+
+   Vetor aleatório 1
+     Pesquisa sequencial - caso medio: 1522
+     Pesquisa sequencial sentinela - caso medio: 763
+     Pesquisa binaria - caso medio: 64
+     Pesquisa por interpolacao - caso medio: 48
+
+   Vetor aleatório 2
+     Pesquisa sequencial - caso medio: 6230
+     Pesquisa sequencial sentinela - caso medio: 3118
+     Pesquisa binaria - caso medio: 96
+     Pesquisa por interpolacao - caso medio: 66
+
+   Vetor aleatório 3
+     Pesquisa sequencial - caso medio: 13048
+     Pesquisa sequencial sentinela - caso medio: 6528
+     Pesquisa binaria - caso medio: 128
+     Pesquisa por interpolacao - caso medio: 84
+
+   Vetor aleatório 4
+     Pesquisa sequencial - caso medio: 20834
+     Pesquisa sequencial sentinela - caso medio: 10422
+     Pesquisa binaria - caso medio: 160
+     Pesquisa por interpolacao - caso medio: 102
+
+   Vetor aleatório 5
+     Pesquisa sequencial - caso medio: 27636
+     Pesquisa sequencial sentinela - caso medio: 13824
+     Pesquisa binaria - caso medio: 189
+     Pesquisa por interpolacao - caso medio: 126
+
+   Vetor aleatório 6
+     Pesquisa sequencial - caso medio: 30470
+     Pesquisa sequencial sentinela - caso medio: 15242
+     Pesquisa binaria - caso medio: 221
+     Pesquisa por interpolacao - caso medio: 144
+
+   Vetor aleatório 7
+     Pesquisa sequencial - caso medio: 33568
+     Pesquisa sequencial sentinela - caso medio: 16792
+     Pesquisa binaria - caso medio: 253
+     Pesquisa por interpolacao - caso medio: 180
+
+   Vetor aleatório 8
+     Pesquisa sequencial - caso medio: 35906
+     Pesquisa sequencial sentinela - caso medio: 17962
+     Pesquisa binaria - caso medio: 288
+     Pesquisa por interpolacao - caso medio: 198
+
+   Vetor aleatório 9
+     Pesquisa sequencial - caso medio: 45330
+     Pesquisa sequencial sentinela - caso medio: 22675
+     Pesquisa binaria - caso medio: 317
+     Pesquisa por interpolacao - caso medio: 216
+
+---- Vetor de tamanho 6000 ----
+   Vetor aleatório 0
+     Pesquisa sequencial - caso medio: 8676
+     Pesquisa sequencial sentinela - caso medio: 4339
+     Pesquisa binaria - caso medio: 32
+     Pesquisa por interpolacao - caso medio: 18
+
+   Vetor aleatório 1
+     Pesquisa sequencial - caso medio: 17788
+     Pesquisa sequencial sentinela - caso medio: 8896
+     Pesquisa binaria - caso medio: 58
+     Pesquisa por interpolacao - caso medio: 48
+
+   Vetor aleatório 2
+     Pesquisa sequencial - caso medio: 21032
+     Pesquisa sequencial sentinela - caso medio: 10519
+     Pesquisa binaria - caso medio: 87
+     Pesquisa por interpolacao - caso medio: 66
+
+   Vetor aleatório 3
+     Pesquisa sequencial - caso medio: 30962
+     Pesquisa sequencial sentinela - caso medio: 15485
+     Pesquisa binaria - caso medio: 119
+     Pesquisa por interpolacao - caso medio: 84
+
+   Vetor aleatório 4
+     Pesquisa sequencial - caso medio: 37136
+     Pesquisa sequencial sentinela - caso medio: 18573
+     Pesquisa binaria - caso medio: 148
+     Pesquisa por interpolacao - caso medio: 114
+
+   Vetor aleatório 5
+     Pesquisa sequencial - caso medio: 38232
+     Pesquisa sequencial sentinela - caso medio: 19122
+     Pesquisa binaria - caso medio: 183
+     Pesquisa por interpolacao - caso medio: 144
+
+   Vetor aleatório 6
+     Pesquisa sequencial - caso medio: 44828
+     Pesquisa sequencial sentinela - caso medio: 22421
+     Pesquisa binaria - caso medio: 212
+     Pesquisa por interpolacao - caso medio: 174
+
+   Vetor aleatório 7
+     Pesquisa sequencial - caso medio: 45186
+     Pesquisa sequencial sentinela - caso medio: 22601
+     Pesquisa binaria - caso medio: 241
+     Pesquisa por interpolacao - caso medio: 198
+
+   Vetor aleatório 8
+     Pesquisa sequencial - caso medio: 52602
+     Pesquisa sequencial sentinela - caso medio: 26310
+     Pesquisa binaria - caso medio: 270
+     Pesquisa por interpolacao - caso medio: 222
+
+   Vetor aleatório 9
+     Pesquisa sequencial - caso medio: 63514
+     Pesquisa sequencial sentinela - caso medio: 31767
+     Pesquisa binaria - caso medio: 302
+     Pesquisa por interpolacao - caso medio: 234
+
+---- Vetor de tamanho 7000 ----
+   Vetor aleatório 0
+     Pesquisa sequencial - caso medio: 2392
+     Pesquisa sequencial sentinela - caso medio: 1197
+     Pesquisa binaria - caso medio: 32
+     Pesquisa por interpolacao - caso medio: 30
+
+   Vetor aleatório 1
+     Pesquisa sequencial - caso medio: 8040
+     Pesquisa sequencial sentinela - caso medio: 4022
+     Pesquisa binaria - caso medio: 70
+     Pesquisa por interpolacao - caso medio: 54
+
+   Vetor aleatório 2
+     Pesquisa sequencial - caso medio: 10258
+     Pesquisa sequencial sentinela - caso medio: 5132
+     Pesquisa binaria - caso medio: 102
+     Pesquisa por interpolacao - caso medio: 66
+
+   Vetor aleatório 3
+     Pesquisa sequencial - caso medio: 15596
+     Pesquisa sequencial sentinela - caso medio: 7802
+     Pesquisa binaria - caso medio: 137
+     Pesquisa por interpolacao - caso medio: 84
+
+   Vetor aleatório 4
+     Pesquisa sequencial - caso medio: 24086
+     Pesquisa sequencial sentinela - caso medio: 12048
+     Pesquisa binaria - caso medio: 172
+     Pesquisa por interpolacao - caso medio: 108
+
+   Vetor aleatório 5
+     Pesquisa sequencial - caso medio: 31302
+     Pesquisa sequencial sentinela - caso medio: 15657
+     Pesquisa binaria - caso medio: 189
+     Pesquisa por interpolacao - caso medio: 138
+
+   Vetor aleatório 6
+     Pesquisa sequencial - caso medio: 42224
+     Pesquisa sequencial sentinela - caso medio: 21119
+     Pesquisa binaria - caso medio: 218
+     Pesquisa por interpolacao - caso medio: 156
+
+   Vetor aleatório 7
+     Pesquisa sequencial - caso medio: 46144
+     Pesquisa sequencial sentinela - caso medio: 23080
+     Pesquisa binaria - caso medio: 247
+     Pesquisa por interpolacao - caso medio: 180
+
+   Vetor aleatório 8
+     Pesquisa sequencial - caso medio: 47946
+     Pesquisa sequencial sentinela - caso medio: 23982
+     Pesquisa binaria - caso medio: 270
+     Pesquisa por interpolacao - caso medio: 210
+
+   Vetor aleatório 9
+     Pesquisa sequencial - caso medio: 59496
+     Pesquisa sequencial sentinela - caso medio: 29758
+     Pesquisa binaria - caso medio: 299
+     Pesquisa por interpolacao - caso medio: 222
+
+---- Vetor de tamanho 8000 ----
+   Vetor aleatório 0
+     Pesquisa sequencial - caso medio: 6580
+     Pesquisa sequencial sentinela - caso medio: 3291
+     Pesquisa binaria - caso medio: 35
+     Pesquisa por interpolacao - caso medio: 30
+
+   Vetor aleatório 1
+     Pesquisa sequencial - caso medio: 17140
+     Pesquisa sequencial sentinela - caso medio: 8572
+     Pesquisa binaria - caso medio: 73
+     Pesquisa por interpolacao - caso medio: 60
+
+   Vetor aleatório 2
+     Pesquisa sequencial - caso medio: 24312
+     Pesquisa sequencial sentinela - caso medio: 12159
+     Pesquisa binaria - caso medio: 108
+     Pesquisa por interpolacao - caso medio: 78
+
+   Vetor aleatório 3
+     Pesquisa sequencial - caso medio: 38554
+     Pesquisa sequencial sentinela - caso medio: 19281
+     Pesquisa binaria - caso medio: 140
+     Pesquisa por interpolacao - caso medio: 108
+
+   Vetor aleatório 4
+     Pesquisa sequencial - caso medio: 44786
+     Pesquisa sequencial sentinela - caso medio: 22398
+     Pesquisa binaria - caso medio: 169
+     Pesquisa por interpolacao - caso medio: 126
+
+   Vetor aleatório 5
+     Pesquisa sequencial - caso medio: 55678
+     Pesquisa sequencial sentinela - caso medio: 27845
+     Pesquisa binaria - caso medio: 204
+     Pesquisa por interpolacao - caso medio: 138
+
+   Vetor aleatório 6
+     Pesquisa sequencial - caso medio: 66400
+     Pesquisa sequencial sentinela - caso medio: 33207
+     Pesquisa binaria - caso medio: 236
+     Pesquisa por interpolacao - caso medio: 156
+
+   Vetor aleatório 7
+     Pesquisa sequencial - caso medio: 68284
+     Pesquisa sequencial sentinela - caso medio: 34150
+     Pesquisa binaria - caso medio: 271
+     Pesquisa por interpolacao - caso medio: 180
+
+   Vetor aleatório 8
+     Pesquisa sequencial - caso medio: 79832
+     Pesquisa sequencial sentinela - caso medio: 39925
+     Pesquisa binaria - caso medio: 306
+     Pesquisa por interpolacao - caso medio: 204
+
+   Vetor aleatório 9
+     Pesquisa sequencial - caso medio: 83588
+     Pesquisa sequencial sentinela - caso medio: 41804
+     Pesquisa binaria - caso medio: 338
+     Pesquisa por interpolacao - caso medio: 228
+
+---- Vetor de tamanho 9000 ----
+   Vetor aleatório 0
+     Pesquisa sequencial - caso medio: 17468
+     Pesquisa sequencial sentinela - caso medio: 8735
+     Pesquisa binaria - caso medio: 38
+     Pesquisa por interpolacao - caso medio: 18
+
+   Vetor aleatório 1
+     Pesquisa sequencial - caso medio: 28878
+     Pesquisa sequencial sentinela - caso medio: 14441
+     Pesquisa binaria - caso medio: 73
+     Pesquisa por interpolacao - caso medio: 30
+
+   Vetor aleatório 2
+     Pesquisa sequencial - caso medio: 34262
+     Pesquisa sequencial sentinela - caso medio: 17134
+     Pesquisa binaria - caso medio: 105
+     Pesquisa por interpolacao - caso medio: 48
+
+   Vetor aleatório 3
+     Pesquisa sequencial - caso medio: 47808
+     Pesquisa sequencial sentinela - caso medio: 23908
+     Pesquisa binaria - caso medio: 140
+     Pesquisa por interpolacao - caso medio: 72
+
+   Vetor aleatório 4
+     Pesquisa sequencial - caso medio: 53696
+     Pesquisa sequencial sentinela - caso medio: 26853
+     Pesquisa binaria - caso medio: 175
+     Pesquisa por interpolacao - caso medio: 96
+
+   Vetor aleatório 5
+     Pesquisa sequencial - caso medio: 54686
+     Pesquisa sequencial sentinela - caso medio: 27349
+     Pesquisa binaria - caso medio: 207
+     Pesquisa por interpolacao - caso medio: 120
+
+   Vetor aleatório 6
+     Pesquisa sequencial - caso medio: 66364
+     Pesquisa sequencial sentinela - caso medio: 33189
+     Pesquisa binaria - caso medio: 239
+     Pesquisa por interpolacao - caso medio: 138
+
+   Vetor aleatório 7
+     Pesquisa sequencial - caso medio: 81224
+     Pesquisa sequencial sentinela - caso medio: 40620
+     Pesquisa binaria - caso medio: 274
+     Pesquisa por interpolacao - caso medio: 150
+
+   Vetor aleatório 8
+     Pesquisa sequencial - caso medio: 81758
+     Pesquisa sequencial sentinela - caso medio: 40888
+     Pesquisa binaria - caso medio: 306
+     Pesquisa por interpolacao - caso medio: 192
+
+   Vetor aleatório 9
+     Pesquisa sequencial - caso medio: 98096
+     Pesquisa sequencial sentinela - caso medio: 49058
+     Pesquisa binaria - caso medio: 341
+     Pesquisa por interpolacao - caso medio: 210
+
+---- Vetor de tamanho 10000 ----
+   Vetor aleatório 0
+     Pesquisa sequencial - caso medio: 1930
+     Pesquisa sequencial sentinela - caso medio: 966
+     Pesquisa binaria - caso medio: 29
+     Pesquisa por interpolacao - caso medio: 30
+
+   Vetor aleatório 1
+     Pesquisa sequencial - caso medio: 19100
+     Pesquisa sequencial sentinela - caso medio: 9552
+     Pesquisa binaria - caso medio: 64
+     Pesquisa por interpolacao - caso medio: 60
+
+   Vetor aleatório 2
+     Pesquisa sequencial - caso medio: 38864
+     Pesquisa sequencial sentinela - caso medio: 19435
+     Pesquisa binaria - caso medio: 87
+     Pesquisa por interpolacao - caso medio: 84
+
+   Vetor aleatório 3
+     Pesquisa sequencial - caso medio: 42422
+     Pesquisa sequencial sentinela - caso medio: 21215
+     Pesquisa binaria - caso medio: 125
+     Pesquisa por interpolacao - caso medio: 102
+
+   Vetor aleatório 4
+     Pesquisa sequencial - caso medio: 61322
+     Pesquisa sequencial sentinela - caso medio: 30666
+     Pesquisa binaria - caso medio: 160
+     Pesquisa por interpolacao - caso medio: 120
+
+   Vetor aleatório 5
+     Pesquisa sequencial - caso medio: 78648
+     Pesquisa sequencial sentinela - caso medio: 39330
+     Pesquisa binaria - caso medio: 195
+     Pesquisa por interpolacao - caso medio: 150
+
+   Vetor aleatório 6
+     Pesquisa sequencial - caso medio: 94994
+     Pesquisa sequencial sentinela - caso medio: 47504
+     Pesquisa binaria - caso medio: 224
+     Pesquisa por interpolacao - caso medio: 174
+
+   Vetor aleatório 7
+     Pesquisa sequencial - caso medio: 113850
+     Pesquisa sequencial sentinela - caso medio: 56933
+     Pesquisa binaria - caso medio: 256
+     Pesquisa por interpolacao - caso medio: 192
+
+   Vetor aleatório 8
+     Pesquisa sequencial - caso medio: 130878
+     Pesquisa sequencial sentinela - caso medio: 65448
+     Pesquisa binaria - caso medio: 297
+     Pesquisa por interpolacao - caso medio: 204
+
+   Vetor aleatório 9
+     Pesquisa sequencial - caso medio: 135978
+     Pesquisa sequencial sentinela - caso medio: 67999
+     Pesquisa binaria - caso medio: 332
+     Pesquisa por interpolacao - caso medio: 216
+
