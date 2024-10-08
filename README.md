@@ -36,3 +36,6 @@ Localizado em uma área de 67 mil metros quadrados, o Centro de Ciências Tecnol
 
 - [UDESC CCT](https://www.udesc.br/cct)
 
+## Prospecções futuras para esse repositório 
+
+- Adicionar informações de cada professor em cada disciplina
