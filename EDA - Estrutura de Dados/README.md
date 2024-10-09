@@ -38,9 +38,8 @@ Critérios para escolha e estudo de uma estrutura de dados incluem eficiência p
 
 ### Sobre o Professor
 EVERLIN FIGHERA COSTA MARQUES
-Departamento: 
 
-DEPARTAMENTO DE CIÊNCIA DA COMPUTAÇÃO CCT
+Departamento: DEPARTAMENTO DE CIÊNCIA DA COMPUTAÇÃO CCT
 
 Titulação: Mestrado em Mestre em Ciência da Computação
 ### E-mail: 
