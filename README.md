@@ -25,7 +25,13 @@ bem como trabalhos, projetos, materiais usados e arquivos diversos meus.
 # 2022/1
 - PFN: Programação Funcional
 
+## Sobre mim
+Herton da Silveira e Silva
 
+Comecei a desenvolver em 2021 quando iniciei meus estudos de bacharelado em Ciência da Computação na Universidade de Santa Catarina - UDESC em Joinville - Brasil, onde resido atualmente. Criei esse repositório apenas para guardar informações potencialmente úteis no futuro do meu curso. 
+
+### Site com todas as minhas redes:
+https://hertonnn.github.io/
 ## Sobre a UDESC CCT
 
 Com 53 anos de fundação, a Udesc Joinville é considerada uma das melhores universidades públicas do país. A instituição oferece nove cursos de graduação e 11 cursos de pós-graduação, inteiramente gratuitos. A equipe é composta por cerca de 250 professores, em grande parte doutores, além de 96 servidores técnicos.
