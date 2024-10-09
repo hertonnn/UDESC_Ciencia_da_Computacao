@@ -25,7 +25,7 @@ bem como trabalhos, projetos, materiais usados e arquivos diversos meus.
 # 2022/1
 - PFN: Programação Funcional
 
-## Sobre mim
+# Sobre mim
 #### Herton da Silveira e Silva
 
 Comecei a desenvolver em 2021 quando iniciei meus estudos de bacharelado em Ciência da Computação na Universidade de Santa Catarina - UDESC em Joinville - Brasil, onde resido atualmente. Criei esse repositório apenas para guardar informações potencialmente úteis no futuro do meu curso. 
