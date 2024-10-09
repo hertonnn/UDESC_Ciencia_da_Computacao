@@ -38,4 +38,13 @@ Complementar:
 - [Vários livros podem ser acessados np formato eletrônico UDESC](https://www.udesc.br/bu/acervos/ebook)
 - [Wik_TEG](https://pt.wikipedia.org/wiki/Teoria_dos_grafos)
 
+### Sobre o Professor
+GILMARIO BARBOSA DOS SANTOS
+
+Bacharel em Processamento de Dados pela Universidade Federal da Bahia (1996), mestrado em Ciência da Computação pela Universidade Federal de Santa Catarina (1999) e Doutorado na área de Engenharia da Computação (2012) pela UNICAMP/FEEC. Atualmente trabalha como professor no Departamento de Ciência da Computação na Universidade do Estado de Santa Catarina com foco em processamento computacional baseado em imagens (Análise, Síntese e Processamento digital de imagens) e estruturas de dados e algoritmos.
+### Email:
+gilmario.santos@udesc.br
+### Lattes:
+http://lattes.cnpq.br/2957755655265658
+
 
