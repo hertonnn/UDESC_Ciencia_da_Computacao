@@ -36,6 +36,18 @@ Critérios para escolha e estudo de uma estrutura de dados incluem eficiência p
 
 - [Data Structures e Algorithms with C ( PAL e HALDEN ) - caps 3 e 4 - string e pointers](https://vdoc.pub/download/data-structures-and-algorithms-with-c-3i7uhuudfl20)
 
+### Sobre o Professor
+EVERLIN FIGHERA COSTA MARQUES
+Departamento: 
+
+DEPARTAMENTO DE CIÊNCIA DA COMPUTAÇÃO CCT
+
+Titulação: Mestrado em Mestre em Ciência da Computação
+### E-mail: 
+everlin.marques@udesc.br
+### Lattes: 
+Não registrado
+
 
 
 
