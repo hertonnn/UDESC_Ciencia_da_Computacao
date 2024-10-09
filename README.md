@@ -1,5 +1,5 @@
 # BCC - UDESC 📚🧑🏻‍💻
-![Texto Alternativo](https://github.com/hertonnn/UDESC_Ciencia_da_Computacao/blob/master/utils/img/img_grafo.png)
+
 
 Este repositório contém boa parte do conteúdo da grade curricular do curso de Bacharelado em Ciência da Computação na 
 Universidade do Estado de Santa Catarina - UDESC, contendo as principais disciplinas, 
@@ -28,6 +28,8 @@ bem como trabalhos, projetos, materiais usados e arquivos diversos meus.
 
 # Sobre mim
 #### Herton da Silveira e Silva
+
+![Texto Alternativo](https://github.com/hertonnn/UDESC_Ciencia_da_Computacao/blob/master/utils/img/img_site.png)
 
 Comecei a desenvolver em 2021 quando iniciei meus estudos de bacharelado em Ciência da Computação na Universidade de Santa Catarina - UDESC em Joinville - Brasil, onde resido atualmente. Criei esse repositório apenas para guardar informações potencialmente úteis no futuro do meu curso. 
 
