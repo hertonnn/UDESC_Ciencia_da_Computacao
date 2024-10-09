@@ -43,4 +43,30 @@ como processamento de linguagens, reconhecimento de padrões, modelagem de siste
 
 - [Finite Automata Designer - Algoritmos aplicados em AFDs (NOVA FERRAMENTA!!! em fase de testes... adicionada em 19/04/2024)](https://fa.akdev.ir/)
 
+### Sobre o Professor
+Prof. Ricardo Martins
+
+Possui graduação em Engenharia Elétrica pela Universidade Federal de Uberlândia (1993), mestrado em Engenharia Elétrica pela Universidade Federal de Santa Catarina (1996) e doutorado em Engenharia Elétrica pela Universidade do Estado de Santa Catarina (2020). Desde 1997, é professor efetivo da Universidade do Estado de Santa Catarina - UDESC, lotado no Departamento de Ciência da Computação. Tem experiência nas áreas de Ciência da Computação e Engenharia Elétrica, com ênfase em Controle e Automação de Sistemas. Atua principalmente nos seguintes temas: Linguagem Formais e Autômatos, Redes de Computadores, Controle Supervisório de Sistemas a Eventos Discretos. Atualmente, desenvolve trabalhos relacionados a Sistemas Autônomos aplicados à veículos não tripulados.
+ 
+Dep. de Ciência da Computação - DCC
+Sala 20 / F-210E (interna) - Ramal 17823
+Fone: (47) 3481-7823
+ 
+Áreas de atuação
+Linguagens Formais e Autômatos
+Controle / Coordenação (veículos não tripulados)
+ 
+Disciplinas ministradas
+- LFA0001 - BCC
+- LPG0001 - BCC
+- LPG0002 - TADS
+- ECS1004 e ECS2004 - TADS
+(Coordenação de Estágios)
+### Email:
+ricardo.martins@udesc.br
+
+ 
+### Lattes:
+http://lattes.cnpq.br/4395588770660219
+
 
