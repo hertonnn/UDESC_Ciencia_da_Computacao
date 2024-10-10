@@ -37,7 +37,7 @@ Comecei a desenvolver em 2021 quando iniciei meus estudos de bacharelado em Ciê
 - [Meu site](https://hertonnn.github.io/)
 ## Sobre a UDESC CCT
 
-![Texto Alternativo](https://github.com/hertonnn/UDESC_Ciencia_da_Computacao/blob/master/utils/img/img_udesc.png)
+![Texto Alternativo](https://github.com/hertonnn/UDESC_Ciencia_da_Computacao/blob/master/utils/img/img_udesc.jpg)
 
 Com 53 anos de fundação, a Udesc Joinville é considerada uma das melhores universidades públicas do país. A instituição oferece nove cursos de graduação e 11 cursos de pós-graduação, inteiramente gratuitos. A equipe é composta por cerca de 250 professores, em grande parte doutores, além de 96 servidores técnicos.
 
