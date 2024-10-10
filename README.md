@@ -1,5 +1,5 @@
 # BCC - UDESC 📚🧑🏻‍💻
-
+![Texto Alternativo](https://tenor.com/pt-BR/view/thematrixreloaded-matrix-reloaded-neo-keanureeves-gif-3449253871426083114)
 
 Este repositório contém boa parte do conteúdo da grade curricular do curso de Bacharelado em Ciência da Computação na 
 Universidade do Estado de Santa Catarina - UDESC, contendo as principais disciplinas, 
@@ -34,7 +34,7 @@ bem como trabalhos, projetos, materiais usados e arquivos diversos meus.
 Comecei a desenvolver em 2021 quando iniciei meus estudos de bacharelado em Ciência da Computação na Universidade de Santa Catarina - UDESC em Joinville - Brasil, onde resido atualmente. Criei esse repositório apenas para guardar informações potencialmente úteis no futuro do meu curso. 
 
 #### Site com todas as minhas redes:
-https://hertonnn.github.io/
+- [Meu site](https://hertonnn.github.io/)
 ## Sobre a UDESC CCT
 
 ![Texto Alternativo](https://github.com/hertonnn/UDESC_Ciencia_da_Computacao/blob/master/utils/img/img_udesc.png)
