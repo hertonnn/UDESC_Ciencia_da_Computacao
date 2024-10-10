@@ -27,7 +27,6 @@ bem como trabalhos, projetos, materiais usados e arquivos diversos meus.
 - PFN: Programação Funcional
 
 # Sobre mim
-## Herton da Silveira e Silva
 
 ![Texto Alternativo](https://github.com/hertonnn/UDESC_Ciencia_da_Computacao/blob/master/utils/img/img_site.png)
 
