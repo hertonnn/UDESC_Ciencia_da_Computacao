@@ -1,5 +1,5 @@
 # BCC - UDESC 📚🧑🏻‍💻
-![Texto Alternativo](https://tenor.com/pt-BR/view/thematrixreloaded-matrix-reloaded-neo-keanureeves-gif-3449253871426083114)
+![Texto Alternativo](https://github.com/hertonnn/UDESC_Ciencia_da_Computacao/blob/master/utils/img/img_matrix.gif)
 
 Este repositório contém boa parte do conteúdo da grade curricular do curso de Bacharelado em Ciência da Computação na 
 Universidade do Estado de Santa Catarina - UDESC, contendo as principais disciplinas, 
