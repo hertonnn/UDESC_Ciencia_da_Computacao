@@ -39,7 +39,7 @@ obs: Essa relevância não é a relevância da disciplina no curso, e sim a quan
 - ALI: Álgebra Linear
 - CDI I: Cálculo Diferencial e Integral
 # 2022/1
-- GAN: Geometria Análitica
+- GAN: Geometria Análitica 📌
 - ICD: Introdução ao Cálculo Diferencial e Integral
 - TGS: Teoria Geral de Sistemas ⏳
 - LMA: Lógica Matemática ⏳
