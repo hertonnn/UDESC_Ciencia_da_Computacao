@@ -10,22 +10,41 @@ bem como trabalhos, projetos, materiais usados e arquivos diversos meus.
 | Relevância | Símbolo    | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
 | `Max` | `📌` | Acesse essas disciplinas primeiro. Pois, possuem material documentado, links, contextualização e mais. |
+| `Min` | `  ` | Possui pouco material ou material muito específico feito na disciplina. Porém, ainda pode servir a depender da sua dúvida.|
+| `Null`| `⏳` | Sem registros significativos da disciplina. Por enquanto...						 |
+
+obs: Essa relevância não é a relevância da disciplina no curso, e sim a quantidade e qualidade do material no presente repositório.
+
 
 # 2024/2
 - LFA: Linguagens Formais e Autômatos 📌
-- EDA2: Estrutura de Dados 2 
+- EDA II: Estrutura de Dados 2 
 - AOC: Arquitetura e Organização de Computadores
 - EMI: Empreendedorismo em Informática
 - TEG: Teoria dos Grafos 📌
 # 2024/1
 - POO: Programação Orientada a Objetos
 - ANN: Análise Numérica
+- MEP: Metodologia de Pesquisa ⏳
+# 2023/1
+- CDI II: Cálculo Diferencial e Integral 2
 - EDA: Estrutura de Dados 📌
-- MDI: Matemática Discreta
+- AMS: Análise e Modelagem de Sistemas
+- EST: Probabilidade e Estatística ⏳
 - SID: Sistemas Digitais
+# 2022/2
+- ECC: Eletrõnica para Ciência da Computação ⏳
+- LPG: Linguagem de Programação ⏳
+- MDI: Matemática Discreta
+- ALI: Álgebra Linear
+- CDI I: Cálculo Diferencial e Integral
 # 2022/1
-- PFN: Programação Funcional
-
+- GAN: Geometria Análitica
+- ICD: Introdução ao Cálculo Diferencial e Integral
+- TGS: Teoria Geral de Sistemas ⏳
+- LMA: Lógica Matemática ⏳
+- PFN: Programação Funcional 
+- AGT: Algoritmos ⏳
 # Sobre mim
 
 ![Texto Alternativo](https://github.com/hertonnn/UDESC_Ciencia_da_Computacao/blob/master/utils/img/img_site.png)
