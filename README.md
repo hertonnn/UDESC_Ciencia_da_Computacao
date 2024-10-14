@@ -36,7 +36,7 @@ obs: Essa relevância não é a relevância da disciplina no curso, e sim a quan
 - ECC: Eletrõnica para Ciência da Computação ⏳
 - LPG: Linguagem de Programação ⏳
 - MDI: Matemática Discreta
-- ALI: Álgebra Linear
+- ALI: Álgebra Linear 📌
 - CDI I: Cálculo Diferencial e Integral
 # 2022/1
 - GAN: Geometria Análitica 📌
