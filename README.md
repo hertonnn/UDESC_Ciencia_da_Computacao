@@ -27,7 +27,7 @@ obs: Essa relevância não é a relevância da disciplina no curso, e sim a quan
 - ANN: Análise Numérica
 - MEP: Metodologia de Pesquisa ⏳
 # 2023/1
-- CDI II: Cálculo Diferencial e Integral 2
+- CDI II: Cálculo Diferencial e Integral 2 📌
 - EDA: Estrutura de Dados 📌
 - AMS: Análise e Modelagem de Sistemas
 - EST: Probabilidade e Estatística ⏳
