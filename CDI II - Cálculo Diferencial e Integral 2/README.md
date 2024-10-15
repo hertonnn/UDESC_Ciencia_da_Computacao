@@ -9,6 +9,7 @@ Empregando as técnicas do Cálculo, somos capazes de calcular grandezas como ta
 
 # Sobre o professor
 Rodrigo de Lima
+
 Possui graduação em Licenciatura em Matemática pelo Centro Universitário do Planalto de Araxá(2000) e mestrado em Matemática Aplicada pela Universidade Federal do Paraná(2006). Atualmente é Professor assistente da Universidade do Estado de Santa Catarina.
 ## Email:
 rodrigo.lima@udesc.br
