@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
+#include "busca_BFS.c"
 
 #define NUM_CARACTERISTICAS 4 // Número de características por flor
 #define MAX_AMOSTRAS 150      // Número máximo de amostras (ajustado para o tamanho do dataset)
@@ -14,6 +15,9 @@ typedef struct {
     float petal_width;
     int key;
 } Flower;
+
+// Grafo para a BFS
+struct Graph* graph;
 
 // Função para encontrar os valores máximos e mínimos para normalização
 void encontrar_max_min(Flower dataset[], int num_amostras, Flower *max, Flower *min) {
@@ -87,7 +91,7 @@ void ler_dados_csv(const char *filename, Flower dataset[], int *num_amostras) {
 // Função para gerar a matriz de adjacências
 void gerar_matriz_adjacencias(Flower dataset[], int num_amostras, int matriz[num_amostras][num_amostras]) {
     Flower max, min;
-    FILE *arestas = fopen("./text1.txt","a");
+    FILE *arestas = fopen("./text1.txt","w");
 
     // Encontrar valores máximos e mínimos para normalização
     encontrar_max_min(dataset, num_amostras, &max, &min);
@@ -109,8 +113,12 @@ void gerar_matriz_adjacencias(Flower dataset[], int num_amostras, int matriz[num
             if (distancia <= LIMIAR) {
                 matriz[i][j] = 1;
                 matriz[j][i] = 1; // Grafo não direcionado
+
+                // Adiciona cada conexão (aresta) num arquivo para plotar em python
                 fprintf(arestas, "%i %i\n", flor_normalizada_1.key, flor_normalizada_2.key);
-                printf("%i", flor_normalizada_1.key);
+                // Adiciona cada conexão (aresta) em uma fila para a busca BFS
+                addEdge(graph, flor_normalizada_1.key, flor_normalizada_2.key);
+        
             }
         }
     }
@@ -120,6 +128,7 @@ void gerar_matriz_adjacencias(Flower dataset[], int num_amostras, int matriz[num
 
 // Função para imprimir a matriz de adjacências
 void imprimir_matriz_adjacencias(int matriz[][MAX_AMOSTRAS], int num_amostras) {
+    printf("\n------------------------- Matriz de adjacências -------------------------\n\n");
     for (int i = 0; i < num_amostras; i++) {
         for (int j = 0; j < num_amostras; j++) {
             printf("%d ", matriz[i][j]);
@@ -129,6 +138,9 @@ void imprimir_matriz_adjacencias(int matriz[][MAX_AMOSTRAS], int num_amostras) {
 }
 
 int main() {
+    //BFS
+    graph = createGraph(2586);
+    //
     Flower dataset[MAX_AMOSTRAS]; // Armazena todas as amostras
     int num_amostras;
 
@@ -142,7 +154,14 @@ int main() {
     gerar_matriz_adjacencias(dataset, num_amostras, matriz_adjacencias);
 
     // Imprimir matriz de adjacências
-   //imprimir_matriz_adjacencias(matriz_adjacencias, num_amostras);
+    imprimir_matriz_adjacencias(matriz_adjacencias, num_amostras);
+    
+    //BFS
+    printf("\n\n\n------------------------- Busca BFS -------------------------\n\n");
+    printf("Começando no 0\n\n");
+    bfs(graph,0);
+    printf("Começando no 75\n\n");
+    bfs(graph, 75);
 
     return 0;
 }
