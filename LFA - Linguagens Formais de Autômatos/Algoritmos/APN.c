@@ -1,4 +1,5 @@
 // AFD - Autômato Finito Determinístico
+// https://aleph0.info/cursos/lf/notas/lfa.pdf
 
 // M = (∑, Q, δ, q0, F, V) Representa o Autômato
 
