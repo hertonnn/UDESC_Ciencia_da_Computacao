@@ -79,53 +79,58 @@ struct Transition* getTransition(struct State* current_state, char symbol, char 
     
     return NULL;
 }
-// ab  ba -> empilha a,b,a,b Falhou!!
-// ab e ba -> empilha a,b | muda estado | desempilha b,a Aceitou!
-//--------------------------
-
-// ab  ba -> empilha a,b,a,b Falhou!! | testa outra transição | 
 
 // Verifica input
-int ap(char* input, struct AFD* automaton, Cell* stack){
+int init_APN(char* input, struct AFD* automaton, Cell* stack){
 
     struct State* current_state = automaton->init_state;
-    struct Transition* current_transition;
     Cell* head = stack;
 
+    struct Transition** possible_changes_states = checkChangeStates(current_state);
+
     int accepted = 1;
+    int index_transition = 0;
 
-    for(int i = 0; input[i] != '\0'; i++){
-        printf("<%s> ", current_state->name);
-        printf("%c ", input[i]);
+    while (/*Enquanto eu não sei o que*/)
+    {
+        current_state = possible_changes_states[index_transition]->next_state;
+        possible_changes_states = checkChangeStates(current_state);
+    }
+    
 
-        current_transition = getTransition(current_state, input[i], ' ', automaton);
+
+    // for(int i = 0; input[i] != '\0'; i++){
+    //     printf("<%s> ", current_state->name);
+    //     printf("%c ", input[i]);
+
+    //     current_transition = getTransition(current_state, input[i], ' ', automaton);
         
-        // não achou transição
-        if(!current_transition){
-            accepted = 0;
-            break;
-        }
-        if(current_transition->char_stack != EMPTY){
-            head = push(head, current_transition->char_stack);
-        }
-        if(current_transition->char_unstack != EMPTY){
-            // o topo não condiz com o que quero desempilhar
-            if(head->content != current_transition->char_unstack){
-                accepted = 0;
-                break;
-            }
-            pop(&head);
-        }
-        current_state = current_transition->next_state;
-    }
-    head = pop(&head); // Se a pilha estiver vazia ele retira a cabeça que tem como conteúdo '#'
-    if(isEmpty(head) && accepted){
-        current_transition = getTransition(current_state, EMPTYSTACK, EMPTYSTACK, automaton);
-        if(current_transition != NULL && current_transition->next_state->end == 1){
-            printf("<%s> ", current_state->name);
-            return 1;
-        }
-    }
+    //     // não achou transição
+    //     if(!current_transition){
+    //         accepted = 0;
+    //         break;
+    //     }
+    //     if(current_transition->char_stack != EMPTY){
+    //         head = push(head, current_transition->char_stack);
+    //     }
+    //     if(current_transition->char_unstack != EMPTY){
+    //         // o topo não condiz com o que quero desempilhar
+    //         if(head->content != current_transition->char_unstack){
+    //             accepted = 0;
+    //             break;
+    //         }
+    //         pop(&head);
+    //     }
+    //     current_state = current_transition->next_state;
+    // }
+    // head = pop(&head); // Se a pilha estiver vazia ele retira a cabeça que tem como conteúdo '#'
+    // if(isEmpty(head) && accepted){
+    //     current_transition = getTransition(current_state, EMPTYSTACK, EMPTYSTACK, automaton);
+    //     if(current_transition != NULL && current_transition->next_state->end == 1){
+    //         printf("<%s> ", current_state->name);
+    //         return 1;
+    //     }
+    // }
     return 0;
 }
 
@@ -287,7 +292,7 @@ int main(){
         printf("\nDigite a fita a ser lida: ");
         scanf("%s", input);
 
-        int accepted = ap(input, automaton, stack);
+        int accepted = init_APN(input, automaton, stack);
 
         if(accepted){
             printf("\nLinguagem reconhecida!");
