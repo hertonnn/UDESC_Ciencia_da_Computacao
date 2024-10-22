@@ -2,7 +2,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#define SIZE 2586
+
+#define SIZE 2000
 
 struct queue {
   int items[SIZE];
@@ -10,12 +11,13 @@ struct queue {
   int rear;
 };
 
-struct queue* createQueue();
-void enqueue(struct queue* q, int);
-int dequeue(struct queue* q);
-void display(struct queue* q);
-int isEmpty(struct queue* q);
-void printQueue(struct queue* q);
+typedef struct {
+    float sepal_length;
+    float sepal_width;
+    float petal_length;
+    float petal_width;
+    int key;
+} Flower;
 
 struct node {
   int vertex;
@@ -30,6 +32,13 @@ struct Graph {
   int* visited;
 };
 
+struct queue* createQueue();
+void enqueue(struct queue* q, int);
+int dequeue(struct queue* q);
+int isEmpty(struct queue* q);
+void printQueue(struct queue* q);
+void printGraph(struct Graph* graph);
+
 // BFS algorithm
 void bfs(struct Graph* graph, int startVertex) {
   int count = 0;
@@ -41,7 +50,7 @@ void bfs(struct Graph* graph, int startVertex) {
   while (!isEmpty(q)) {
     //printQueue(q);
     int currentVertex = dequeue(q);
-    printf("Visited %d\n", currentVertex);
+    //printf("Visited %d\n", currentVertex);
     count++;
 
     struct node* temp = graph->adjLists[currentVertex];
@@ -56,7 +65,6 @@ void bfs(struct Graph* graph, int startVertex) {
       temp = temp->next;
     }
   }
-  printf("\nVisitados: %i\n", count);
 }
 
 // Creating a node
@@ -85,16 +93,16 @@ struct Graph* createGraph(int vertices) {
 }
 
 // Add edge
-void addEdge(struct Graph* graph, int src, int dest) {
+void addEdge(struct Graph* graph, Flower src, Flower dest) {
   // Add edge from src to dest
-  struct node* newNode = createNode(dest);
-  newNode->next = graph->adjLists[src];
-  graph->adjLists[src] = newNode;
+  struct node* newNode = createNode(dest.key);
+  newNode->next = graph->adjLists[src.key];
+  graph->adjLists[src.key] = newNode;
 
   // Add edge from dest to src
-  newNode = createNode(src);
-  newNode->next = graph->adjLists[dest];
-  graph->adjLists[dest] = newNode;
+  newNode = createNode(src.key);
+  newNode->next = graph->adjLists[dest.key];
+  graph->adjLists[dest.key] = newNode;
 }
 
 // Create a queue
@@ -135,7 +143,7 @@ int dequeue(struct queue* q) {
     item = q->items[q->front];
     q->front++;
     if (q->front > q->rear) {
-      printf("Resetting queue ");
+      //printf("Resetting queue ");
       q->front = q->rear = -1;
     }
   }
@@ -154,4 +162,21 @@ void printQueue(struct queue* q) {
       printf("%d ", q->items[i]);
     }
   }
+}
+
+// Print the graph 
+
+void printGraph(struct Graph* graph){
+    int v;
+    printf("\nGrafo\n");
+    for(v = 0; v < graph->numVertices; v++){
+        struct node* temp = graph->adjLists[v];
+        printf("\nVertex %d: ", v);
+        while (temp)
+        {
+          printf("%d -> ", temp->vertex);
+          temp = temp->next;
+        } 
+    }
+    printf("\n");
 }

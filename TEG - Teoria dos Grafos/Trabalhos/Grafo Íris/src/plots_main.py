@@ -245,7 +245,7 @@ def GrafoFromFile(enderecoArquivo = "", dirigido = False) -> Grafo:
 
 
 if __name__ == "__main__":
-    name= './text1.txt'#grafo.csv'#
+    name= './grafo-total.txt'#grafo.csv'#
       
     g = GrafoFromFile(name)    
     #g.showMapa2D()

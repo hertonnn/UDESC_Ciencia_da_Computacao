@@ -4,17 +4,11 @@
 #include <string.h>
 #include "busca_BFS.c"
 
+
 #define NUM_CARACTERISTICAS 4 // Número de características por flor
 #define MAX_AMOSTRAS 150      // Número máximo de amostras (ajustado para o tamanho do dataset)
 #define LIMIAR 0.3            // Limiar para a criação de arestas
 
-typedef struct {
-    float sepal_length;
-    float sepal_width;
-    float petal_length;
-    float petal_width;
-    int key;
-} Flower;
 
 // Grafo para a BFS
 struct Graph* graph;
@@ -91,7 +85,7 @@ void ler_dados_csv(const char *filename, Flower dataset[], int *num_amostras) {
 // Função para gerar a matriz de adjacências
 void gerar_matriz_adjacencias(Flower dataset[], int num_amostras, int matriz[num_amostras][num_amostras]) {
     Flower max, min;
-    FILE *arestas = fopen("./text1.txt","w");
+    FILE *arestas = fopen("./grafo-total.txt","w");
 
     // Encontrar valores máximos e mínimos para normalização
     encontrar_max_min(dataset, num_amostras, &max, &min);
@@ -117,7 +111,7 @@ void gerar_matriz_adjacencias(Flower dataset[], int num_amostras, int matriz[num
                 // Adiciona cada conexão (aresta) num arquivo para plotar em python
                 fprintf(arestas, "%i %i\n", flor_normalizada_1.key, flor_normalizada_2.key);
                 // Adiciona cada conexão (aresta) em uma fila para a busca BFS
-                addEdge(graph, flor_normalizada_1.key, flor_normalizada_2.key);
+                addEdge(graph, flor_normalizada_1, flor_normalizada_2);
         
             }
         }
@@ -139,7 +133,9 @@ void imprimir_matriz_adjacencias(int matriz[][MAX_AMOSTRAS], int num_amostras) {
 
 int main() {
     //BFS
-    graph = createGraph(2586);
+    graph = createGraph(150);
+    FILE *grupo_1 = fopen("./grafo_grupo_1.txt","w"); 
+    FILE *grupo_2 = fopen("./grafo_grupo_2.txt","w"); 
     //
     Flower dataset[MAX_AMOSTRAS]; // Armazena todas as amostras
     int num_amostras;
@@ -156,12 +152,13 @@ int main() {
     // Imprimir matriz de adjacências
     imprimir_matriz_adjacencias(matriz_adjacencias, num_amostras);
     
+    printGraph(graph);
+
     //BFS
-    printf("\n\n\n------------------------- Busca BFS -------------------------\n\n");
-    printf("Começando no 0\n\n");
     bfs(graph,0);
-    printf("Começando no 75\n\n");
-    bfs(graph, 75);
+    
+    fclose(grupo_1);
+    fclose(grupo_2);
 
     return 0;
 }
