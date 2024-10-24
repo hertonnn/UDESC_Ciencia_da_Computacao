@@ -63,14 +63,27 @@ struct State* getState(char* name_state, struct AFD* automaton){
     return NULL;
 }
 
-struct Transition* getTransition(struct State* current_state, char symbol, struct AFD* automaton){
-    for(int i = 0; i < automaton->num_transitions; i++){
-        if(current_state == automaton->transitions[i]->current_state && symbol == automaton->transitions[i]->symbol){
-            return automaton->transitions[i];
+struct Transition* getTransition(struct State* current_state, char symbol, char unstack, struct AFD* automaton){
+    if(unstack == EMPTYSTACK){
+        for(int i = 0; i < automaton->num_transitions; i++){
+            if(current_state == automaton->transitions[i]->current_state && symbol == automaton->transitions[i]->symbol && automaton->transitions[i]->char_unstack == unstack){
+                    return automaton->transitions[i];
+                }
         }
     }
+    for(int i = 0; i < automaton->num_transitions; i++){
+        if(current_state == automaton->transitions[i]->current_state && symbol == automaton->transitions[i]->symbol){
+                return automaton->transitions[i];
+            }
+    }
+    
     return NULL;
 }
+// ab  ba -> empilha a,b,a,b Falhou!!
+// ab e ba -> empilha a,b | muda estado | desempilha b,a Aceitou!
+//--------------------------
+
+// ab  ba -> empilha a,b,a,b Falhou!! | testa outra transição | 
 
 // Verifica input
 int ap(char* input, struct AFD* automaton, Cell* stack){
@@ -79,31 +92,41 @@ int ap(char* input, struct AFD* automaton, Cell* stack){
     struct Transition* current_transition;
     Cell* head = stack;
 
+    int accepted = 1;
+
     for(int i = 0; input[i] != '\0'; i++){
         printf("<%s> ", current_state->name);
         printf("%c ", input[i]);
 
-        current_transition = getTransition(current_state, input[i], automaton);
+        current_transition = getTransition(current_state, input[i], ' ', automaton);
         
+        // não achou transição
         if(!current_transition){
+            accepted = 0;
             break;
         }
         if(current_transition->char_stack != EMPTY){
             head = push(head, current_transition->char_stack);
         }
         if(current_transition->char_unstack != EMPTY){
+            // o topo não condiz com o que quero desempilhar
+            if(head->content != current_transition->char_unstack){
+                accepted = 0;
+                break;
+            }
             pop(&head);
         }
         current_state = current_transition->next_state;
     }
-    head = pop(&head); // Se a pilha estiver vazia ele retira a cabeça que tem como conteúdo '#'
-    if(isEmpty(head) && current_transition != NULL){
-        if(current_transition->current_state->end){
+   
+    accepted = accepted && isEmpty(pop(&head));// Se a pilha estiver vazia ele retira a cabeça que tem como conteúdo '#'
+    if(accepted){
+        current_transition = getTransition(current_state, EMPTYSTACK, EMPTYSTACK, automaton);
+        if(current_transition != NULL && current_transition->next_state->end == 1){
             printf("<%s> ", current_state->name);
             return 1;
         }
     }
-    // [a*[a+a]]
     return 0;
 }
 
@@ -111,8 +134,6 @@ struct AFD* createAutomaton(FILE* input){
 
     struct AFD* automaton = malloc(sizeof(struct AFD));
     char buffer[SIZEINPUT];
-
-    input = fopen("/home/herton/Documentos/PROGRAMAÇÃO/UDESC_Ciencia_da_Computacao/LFA - Linguagens Formais de Autômatos/Algoritmos/AFD/input_AP.txt","r");
 
     if(!input){
         printf("\nArquivo não encontrado!\n");

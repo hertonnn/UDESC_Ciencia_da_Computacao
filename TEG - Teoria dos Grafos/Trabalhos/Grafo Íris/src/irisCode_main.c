@@ -9,6 +9,13 @@
 #define MAX_AMOSTRAS 150      // Número máximo de amostras (ajustado para o tamanho do dataset)
 #define LIMIAR 0.3            // Limiar para a criação de arestas
 
+typedef struct {
+    float sepal_length;
+    float sepal_width;
+    float petal_length;
+    float petal_width;
+    int key;
+} Flower;
 
 // Grafo para a BFS
 struct Graph* graph;
@@ -111,13 +118,29 @@ void gerar_matriz_adjacencias(Flower dataset[], int num_amostras, int matriz[num
                 // Adiciona cada conexão (aresta) num arquivo para plotar em python
                 fprintf(arestas, "%i %i\n", flor_normalizada_1.key, flor_normalizada_2.key);
                 // Adiciona cada conexão (aresta) em uma fila para a busca BFS
-                addEdge(graph, flor_normalizada_1, flor_normalizada_2);
+                addEdge(graph, flor_normalizada_1.key, flor_normalizada_2.key);
         
             }
         }
     }
 
     fclose(arestas);
+}
+
+void saveSubGraph(struct Graph* sub_graph, FILE* file, int startVertex){
+    int v;
+    int aux = -1;
+    for(v = startVertex; v < sub_graph->count_vertex + startVertex; v++){
+        struct node* temp = graph->adjLists[v];
+        while (temp)
+        {
+            if(temp->vertex > aux){
+                fprintf(file, "%i %i\n", v, temp->vertex);    
+            }
+            temp = temp->next;
+        }
+        aux = v;
+    }
 }
 
 // Função para imprimir a matriz de adjacências
@@ -133,9 +156,9 @@ void imprimir_matriz_adjacencias(int matriz[][MAX_AMOSTRAS], int num_amostras) {
 
 int main() {
     //BFS
-    graph = createGraph(150);
-    FILE *grupo_1 = fopen("./grafo_grupo_1.txt","w"); 
-    FILE *grupo_2 = fopen("./grafo_grupo_2.txt","w"); 
+    graph = createGraph(150); 
+    FILE *grupo_1 = fopen("./grafo-grupo-1.txt","w"); 
+    FILE *grupo_2 = fopen("./grafo-grupo-2.txt","w"); 
     //
     Flower dataset[MAX_AMOSTRAS]; // Armazena todas as amostras
     int num_amostras;
@@ -152,11 +175,21 @@ int main() {
     // Imprimir matriz de adjacências
     imprimir_matriz_adjacencias(matriz_adjacencias, num_amostras);
     
-    printGraph(graph);
+    /*
+        BFS - Usado para achar sub grafos.
+        A cada vez que vc chama a função no mesmo grafo o startvertex deve ser a quantidade
+        de vertices do sub grafo anterior
+    */
 
-    //BFS
-    bfs(graph,0);
+    // Chamo inicialmente com startvertex zero, pois não visitei o grafo ainda
+    struct Graph* sub_graph_1 = bfs(graph, 0);
+    // Chamo de novo com o tamanho do sub grafo achado anteriormente
+    struct Graph* sub_graph_2 = bfs(graph, sub_graph_1->count_vertex);
     
+    // salvando para plotar
+    saveSubGraph(sub_graph_1, grupo_1, 0);
+    saveSubGraph(sub_graph_2, grupo_2, 50);
+
     fclose(grupo_1);
     fclose(grupo_2);
 

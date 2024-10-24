@@ -245,8 +245,14 @@ def GrafoFromFile(enderecoArquivo = "", dirigido = False) -> Grafo:
 
 
 if __name__ == "__main__":
-    name= './grafo-total.txt'#grafo.csv'#
+    name0= './grafo-total.txt'#grafo.csv'#
+    name1= './grafo-grupo-1.txt'
+    name2= './grafo-grupo-2.txt'
       
-    g = GrafoFromFile(name)    
+    g0 = GrafoFromFile(name0)  
+    g1 = GrafoFromFile(name1) 
+    g2 = GrafoFromFile(name2)   
     #g.showMapa2D()
-    g.showMapa3D()
+    g0.showMapa3D()
+    g1.showMapa3D()
+    g2.showMapa3D()

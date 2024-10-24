@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define EMPTY 'e'
+
 typedef struct Cell
 {
     char content;
@@ -14,7 +16,7 @@ typedef struct Cell
 
 Cell* createStack(){
     Cell* stack = malloc(sizeof(stack));
-    stack->content = '#';
+    stack->content = EMPTY;
 
     return stack;
 }
@@ -48,7 +50,7 @@ Cell *pop(Cell** head){
     return remote;
 }
 int isEmpty(Cell* head){
-    if(head->content != '#'){
+    if(head->content != EMPTY){
         return 0;
     }
     return 1;
