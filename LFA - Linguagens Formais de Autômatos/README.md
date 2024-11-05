@@ -43,6 +43,8 @@ como processamento de linguagens, reconhecimento de padrões, modelagem de siste
 
 - [Finite Automata Designer - Algoritmos aplicados em AFDs (NOVA FERRAMENTA!!! em fase de testes... adicionada em 19/04/2024)](https://fa.akdev.ir/)
 
+- [Algoritmo Early](https://anachiarelli.github.io/early-js/)
+
 ### Sobre o Professor
 Prof. Ricardo Martins
 
