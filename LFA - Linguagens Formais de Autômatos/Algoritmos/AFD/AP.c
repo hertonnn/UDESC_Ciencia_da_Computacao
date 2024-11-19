@@ -79,11 +79,6 @@ struct Transition* getTransition(struct State* current_state, char symbol, char 
     
     return NULL;
 }
-// ab  ba -> empilha a,b,a,b Falhou!!
-// ab e ba -> empilha a,b | muda estado | desempilha b,a Aceitou!
-//--------------------------
-
-// ab  ba -> empilha a,b,a,b Falhou!! | testa outra transição | 
 
 // Verifica input
 int ap(char* input, struct AFD* automaton, Cell* stack){
@@ -270,7 +265,7 @@ void printAutomaton(struct AFD* atm){
 }
 
 int main(){
-    FILE* file_input = fopen("AFD/input_AP.txt","r");
+    FILE* file_input = fopen("input_AP.txt","r");
     struct AFD* automaton = createAutomaton(file_input);
 
     // Verificando informações do Autômato!
