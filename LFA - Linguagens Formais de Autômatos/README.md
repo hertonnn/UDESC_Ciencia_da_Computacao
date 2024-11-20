@@ -19,7 +19,7 @@ como processamento de linguagens, reconhecimento de padrões, modelagem de siste
 
 - [Online Regex tester and debuger - regex101](https://regex101.com)
 
-- [Finite State Machine Designer - FSM](https://ricardofm.net/site/fsm-tool)
+- [Finite State Machine Designer - FSM](https://madebyevan.com/fsm/)
 
 - [FSM v2](https://markusfeng.com/projects/graph/)
 
